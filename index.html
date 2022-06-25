@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <section id="navBox" class="d-flex ">
+        <div id="navSlide" class="d-flex flex-column justify-content-between bg-black ">
+            <ul>
+                <li> <a href="#" class="now_playing"> Now playing</a></li>
+                <li> <a href="#"class="popular"> Popular</a></li>
+                <li> <a href="#"class="top_rated"> Top rated</a></li>
+                <li> <a href="#"class="trending"> Trending</a></li>
+                <li> <a href="#"class="upcoming"> Upcoming</a></li>
+                <li> <a href="#contact" class="contact"> Contact us</a></li>
+
+            </ul>
+            <div class=" px-3">
+                <div class="navIcons">
+
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fa-solid fa-globe"></i></a>
+
+                </div>
+                <p>Copyright Â© 2019 All Rights Reserved.</p>
+            </div>
+
+        </div>
+        <div id="navFix" class="d-flex flex-column justify-content-between align-items-center py-4">
+            <img src="images/logo.png" class="w-50 " alt="">
+            <i id="slideBtn" class="fa fa-align-justify fs-3" ></i>
+            <div class="d-flex flex-column ">
+                <i class="fa-solid fa-globe py-3"></i>
+                <i class="fas fa-share-alt"></i>
+            </div>
+        </div>
+<!-- class="fa-solid fa-xmark fs-3" -->
+    </section>
+
+
+    <section>
+       <div class="mainSec py-3">
+
+        <div class="w-75 mx-auto py-5 row">
+            <div class="col-md-6">
+                <input type="text"placeholder="get movies by word ..." id="searchByName">
+            </div>
+            <div class="col-md-6">
+                <input type="text" placeholder="search ..." id="searchInput">
+            </div>
+        </div>
+        <div class="container my-4">
+            <div class="row gy-4 " id="movieRow">
+                <div class="col-lg-4 col-md-6" >
+                        <div class="imgContainer position-relative">
+                            <img src="images/9Gtg2DzBhmYamXBS1hKAhiwbBKS.jpg" class="w-100 rounded-3" alt="" id="poster">
+                       
+                        <div class="imgLayer rounded-3 d-flex align-items-center">
+                                <div class="imgCap text-center ">
+                                    <h2 id="title"> harrrry</h2>
+                                    <p id="discri">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, facere.</p>
+                                    <p >rate: <span id="rate"></span> </p>
+                                    <h4 id="date">25555</h4>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+        </div>
+       </div>
+    </section>
+
+    <section id="contact" class="container-fluid">
+        <div class="w-75 mx-auto py-5">
+            <h2>ContactUs...</h2>
+            <div class="row gy-3">
+                <div class="col-md-6">
+                    <input type="text"placeholder="Enter your Name" id="nameInput">
+                    <p id="invalidName">Your Name is not valid        </p>
+
+                </div>
+                <div class="col-md-6">
+                    <input type="email" placeholder="Enter Email" id="emialInput">
+                    <p id="invalidEmail">entre valid email    </p>
+
+
+                </div>
+                <div class="col-md-6">
+                    <input type="number" placeholder="Enter Phone" id="phoneInput" >
+                    <p id="invalidPhone">entre valid phone      </p>
+                 </div>
+                <div class="col-md-6">
+                    <input type="number" placeholder="Enter Age" id="ageInput" >
+                    <p id="invalidAge">entre valid age        </p>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" placeholder="Enter Password" id="passwordInput" >
+                    <p id="invalidPass">entre valid password *Minimum eight characters, at least one letter and one number:*   </p>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" placeholder="Enter RePassword" id="repasswordInput">
+                </div>
+            </div>
+            <button class="btn btn-outline-danger rounded-1">Submit</button>
+
+        </div>
+
+
+    </section>
+    
+
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
